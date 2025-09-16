@@ -62,7 +62,6 @@ This project is under continuous development. Suggestions, bug reports, and cont
 ## Contact
 
 Project Owner: Ken  
-Email: [your-email@example.com]  
 
 ---
 
