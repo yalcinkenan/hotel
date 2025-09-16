@@ -1,0 +1,129 @@
+/* Renk paleti için CSS değişkenleri tanımlanıyor */
+:root {
+  --primary-color: #E07B39;
+  /* Koyu Turuncu */
+  --secondary-color: #2E5D3A;
+  /* Koyu Yeşil */
+  --complementary-color: #7B2828;
+  /* Koyu Kırmızı / Bordo */
+  --background-light: #F8F8F8;
+  --text-dark: #555555;
+  --text-light: #FFFFFF;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--text-light) !important;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--text-light);
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-light);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+}
+
+footer {
+  background-color: #f0f0f0;
+  /* Açık gri */
+  color: #555555;
+  /* Koyu gri metin */
+  font-weight: 500;
+}
+
+footer a {
+  color: #555555;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #E07B39;
+  /* Turuncu vurgu */
+  text-decoration: underline;
+}
+
+h5 {
+  color: #000000;
+  /* Daha koyu başlık renkleri */
+  font-weight: 700;
+  text-wrap: nowrap;
+  font-size: 1.7rem !important;
+}
+
+ul.list-unstyled li {
+  color: #555555;
+}
+
+ul.list-unstyled li:hover {
+  color: #E07B39;
+}
+
+/* Ana içerik ayarları (MainContent) */
+.main-content {
+  color: var(--text-light);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-content h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.main-content p.lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Hover efektli kutulu menüler için örnek */
+.navbar-nav .nav-item {
+  background-color: var(--text-light);
+  border-radius: 6px;
+  margin: 0 6px;
+  padding: 8px 14px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+
+
+/* Slider kaydırma alanı */
+.slick-track {
+  height: 70vh !important;
+}
